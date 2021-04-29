@@ -96,28 +96,5 @@ int chieuCao(node_t* pTree)
         return (1+Max(chieuCao(pTree->left),chieuCao(pTree->right)));
 }
 
-int main()
-{
-    node_t* root = NULL;
-    int i=0;
- 	while(true){
- 		int tmp;
- 		cout<<"Insert NLR (-1 de stop) : ";
- 		cin>>tmp;
- 		if(tmp<0) break;
- 		else 
- 		root = Insert(root,tmp);
- 		i++;
- 		
-	 }
-    printf("\nDuyet preorder : ");
-    PreOrder(root);
-    printf("\nDuyet inorder  : ");
-    InOrder(root);
-    printf("\nDuyet postorder:");
-    PostOrder(root);
-    cout<<"\nSo la : "<<DEMLA(root);
-    cout<<"\nSo nut : "<<i-DEMLA(root);
-    cout<<"\nChieu cao : "<<chieuCao(root);
-    return 0;
+
 }
