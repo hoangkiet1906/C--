@@ -392,28 +392,4 @@ void hauTo(string b){
 		s.pop();
 	}
 }
-int main()
-{
-    char *a, b[100]/**b = "a+1234"*/;
-    ExpNode *T;
-    a=new char[100];
-    float X;
-    cout<<"Kiet Ne";
-    cout<<"\nnhap chuoi: ";
-    gets(b);
-    string bb = b;
-    fflush(stdin);
-    if(b[0]!='\0')
-    {
-        a=chuyentrungto(b);
-        cout<<"\nchuoi da chuyen sang tien to:"<<a;
-        Taocay(&T,a);
-        cout<<"\nchuoi da chuyen sang hau to:";
-        hauTo(bb);
-        Nhapgiatri(T);
-        X=Tinh(T);
-        cout<<"\nKet qua tinh duoc la: "<<X;
-    }
-    else cout<<"\n chuoi rong";
-    getch();
-}
+
